@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Kata\CountryChecker\CountryChecker\Application\Find;
+namespace Kata\CountryChecker\CountryChecker\Domain\Find;
 
 use Kata\CountryChecker\CountryChecker\Domain\Country;
 use Kata\CountryChecker\CountryChecker\Domain\CountryNotExist;
