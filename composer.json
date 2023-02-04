@@ -1,0 +1,20 @@
+{
+    "name": "kata/country_checker",
+    "description": "A country REST API which checks certain criterias giving a certain amount of data",
+    "type": "projject",
+    "autoload": {
+        "psr-4": {
+            "Kata\\CountryChecker\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "JavierMantecon"
+        }
+    ],
+    "require": {
+        "slim/slim": "^4.11",
+        "laminas/laminas-diactoros": "^2.24",
+        "php-di/php-di": "^7.0"
+    }
+}
