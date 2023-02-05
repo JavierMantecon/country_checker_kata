@@ -13,7 +13,7 @@ use Kata\CountryChecker\CountryChecker\Domain\CountryRepository;
 
 final class ApiCountryRepository implements CountryRepository
 {
-    public function findByCode(string $code): ?Country
+    public function search(string $code): ?Country
     {
         $client = new Client([
             'base_uri' => 'https://restcountries.com/v3.1/alpha/',

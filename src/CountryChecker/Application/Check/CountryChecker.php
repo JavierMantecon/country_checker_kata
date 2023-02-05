@@ -12,6 +12,7 @@ final class CountryChecker
 {
     private string $RIVAL_COUNTRY_CODE = 'NO';
     private CountryFinder $countryFinder;
+    
     public function __construct(CountryRepository $countryRepository)
     {
         $this->countryFinder = new CountryFinder($countryRepository);

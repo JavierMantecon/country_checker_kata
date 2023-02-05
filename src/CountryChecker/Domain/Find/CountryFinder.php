@@ -15,7 +15,7 @@ final class CountryFinder
 
     public function __invoke(string $code): Country
     {
-        $country = $this->repository->findByCode($code);
+        $country = $this->repository->search($code);
 
         if (null === $country) {
             throw new CountryNotExist($code);

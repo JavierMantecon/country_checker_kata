@@ -5,5 +5,5 @@ namespace Kata\CountryChecker\CountryChecker\Domain;
 
 interface CountryRepository
 {
-    public function findByCode(String $code): ?Country;
+    public function search(String $code): ?Country;
 }
