@@ -36,6 +36,8 @@ The input code is in ISO 3166-1 alpha-2 format. If there are any errors like int
 - [ ] The project should run without the needing of composer in local machine.
 - [ ] Appropiate error handling with right HTTP Status.
 - [ ] Refactoring primitives to Value Objects.
+- [X] Acceptance / Functional tests
+- [ ] Unit test
 ```
 http://localhost:8080/country-check?code=ES
 ```
