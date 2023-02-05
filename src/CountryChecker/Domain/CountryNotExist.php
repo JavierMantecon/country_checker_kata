@@ -9,11 +9,11 @@ use Kata\CountryChecker\Shared\Domain\DomainError;
 
 final class CountryNotExist extends DomainError
 {
-    protected $code;
+    protected $countryCode;
 
-    public function __construct(String $code)
+    public function __construct(String $countryCode)
     {
-        $this->$code = $code;
+        $this->countryCode = $countryCode;
 
         parent::__construct();
     }
@@ -25,6 +25,6 @@ final class CountryNotExist extends DomainError
 
     protected function errorMessage(): string
     {
-        return sprintf('The country <%s> does not exist', $this->code);
+        return sprintf('The country <%s> does not exist', $this->countryCode);
     }
 }

@@ -6,5 +6,8 @@ return function (App $app) {
 
     $app->addRoutingMiddleware();
 
-    $app->addErrorMiddleware(true, true, true);
+    $errorMiddleware = $app->addErrorMiddleware(true, true, true);
+
+    $errorHandler = $errorMiddleware->getDefaultErrorHandler();
+    $errorHandler->forceContentType('application/json');
 };
