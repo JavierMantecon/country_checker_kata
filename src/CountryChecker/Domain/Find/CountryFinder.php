@@ -1,4 +1,4 @@
-<?php declare(strict_types=1);
+<?php declare(strict_types = 1);
 
 namespace Kata\CountryChecker\CountryChecker\Domain\Find;
 
@@ -13,7 +13,7 @@ final class CountryFinder
 
     }
 
-    public function __invoke(String $code): Country
+    public function __invoke(string $code): Country
     {
         $country = $this->repository->findByCode($code);
 
